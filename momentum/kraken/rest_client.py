@@ -2,13 +2,12 @@
 from __future__ import annotations
 import aiohttp, asyncio, time, urllib.parse, hashlib, hmac, base64, os
 try:
-    from dotenv import load_dotenv
-    load_dotenv()  # load .env if present
+    from dotenv import load_dotenv; load_dotenv()
 except Exception:
     pass
 
 KRAKEN_API = "https://api.kraken.com"
-USER_AGENT = "momentum/step09"
+USER_AGENT = "momentum/step10-fix5"
 
 def _sign(path: str, data: dict, secret_b64: str) -> str:
     postdata = urllib.parse.urlencode(data)
@@ -21,11 +20,11 @@ class KrakenREST:
     def __init__(self, key: str | None = None, secret: str | None = None, session: aiohttp.ClientSession | None = None):
         self.key = key or os.getenv("KRAKEN_KEY")
         self.secret = secret or os.getenv("KRAKEN_SECRET")
-        self._own_session = session is None
+        self._own = session is None
         self.session = session or aiohttp.ClientSession(headers={"User-Agent": USER_AGENT})
 
     async def close(self):
-        if self._own_session and self.session:
+        if self._own:
             await self.session.close()
 
     async def _post_private(self, endpoint: str, data: dict | None = None) -> dict:
@@ -52,14 +51,15 @@ class KrakenREST:
                 raise RuntimeError(f"Kraken error: {payload['error']}")
             return payload["result"]
 
-    async def open_orders(self) -> dict:
-        return await self._post_private("OpenOrders", {})
+    async def asset_pairs(self) -> dict:
+        return await self._post_public("AssetPairs", {})
 
-    async def own_trades(self, ofs: int = 0) -> dict:
-        return await self._post_private("TradesHistory", {"ofs": ofs})
+    async def ticker_alt(self, altnames_csv: str) -> dict:
+        return await self._post_public("Ticker", {"pair": altnames_csv})
 
-    async def balances(self) -> dict:
-        return await self._post_private("Balance", {})
-
-    async def ticker(self, pair_csv: str) -> dict:
-        return await self._post_public("Ticker", {"pair": pair_csv})
+    async def altname_for_wsname(self, wsname: str) -> str | None:
+        ap = await self.asset_pairs()
+        for v in ap.values():
+            if v.get("wsname") == wsname:
+                return v.get("altname")
+        return None
