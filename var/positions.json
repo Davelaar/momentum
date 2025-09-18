@@ -1,4 +1,1 @@
-
-{
-  "BTC/USD": {"qty": 0.0005, "opened_at": 1000000000, "usd": 0.0}
-}
+{"BTC/USD":{"qty":0.0005,"opened_at":1000000000,"usd":0.0},"_schema":"positions_state/v1"}

@@ -113,3 +113,42 @@
 [2025-09-18 13:33:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
 [2025-09-18 13:34:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195256s >= MAX_AGE_SEC 10800s
 [2025-09-18 13:34:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:35:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195316s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:35:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:36:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195376s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:36:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:37:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195436s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:37:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:38:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195496s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:38:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:39:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195556s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:39:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:40:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195616s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:40:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:41:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195676s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:41:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:42:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195736s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:42:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:43:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195796s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:43:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:44:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195856s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:44:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:45:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195916s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:45:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:46:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758195976s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:46:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:47:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758196036s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:47:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:48:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758196096s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:48:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:49:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758196156s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:49:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:50:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 758196216s >= MAX_AGE_SEC 10800s
+[2025-09-18 13:50:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 13:51:16] fatal in run_once: 'str' object has no attribute 'get'
+[2025-09-18 13:52:16] fatal in run_once: 'str' object has no attribute 'get'
+[2025-09-18 13:53:16] fatal in run_once: 'str' object has no attribute 'get'
+[2025-09-18 13:54:16] fatal in run_once: 'str' object has no attribute 'get'
+[2025-09-18 13:55:16] fatal in run_once: 'str' object has no attribute 'get'
+[2025-09-18 13:56:16] fatal in run_once: 'str' object has no attribute 'get'
+[2025-09-18 13:57:16] fatal in run_once: 'str' object has no attribute 'get'
