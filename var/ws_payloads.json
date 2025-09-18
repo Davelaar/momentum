@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "method": "add_order",
+    "params": {
+      "order_type": "limit",
+      "side": "buy",
+      "order_qty": 0.0003,
+      "symbol": "BTC/USD",
+      "limit_price": 25000.0,
+      "time_in_force": "gtc",
+      "post_only": true,
+      "validate": true,
+      "cl_ord_id": "mom6e-f8e1b590ab"
+    }
+  },
+  "stop_loss": {
+    "method": "add_order",
+    "params": {
+      "order_type": "stop-loss-limit",
+      "side": "sell",
+      "order_qty": 0.0003,
+      "symbol": "BTC/USD",
+      "triggers": {
+        "reference": "last",
+        "price": 24850.0,
+        "price_type": "static"
+      },
+      "limit_price": 24840.0,
+      "time_in_force": "gtc",
+      "validate": true,
+      "cl_ord_id": "mom6s-a3f28c37c8"
+    }
+  },
+  "take_profits": [
+    {
+      "method": "add_order",
+      "params": {
+        "order_type": "take-profit",
+        "side": "sell",
+        "order_qty": 0.00012,
+        "symbol": "BTC/USD",
+        "triggers": {
+          "reference": "last",
+          "price": 25200.0,
+          "price_type": "static"
+        },
+        "time_in_force": "gtc",
+        "validate": true,
+        "cl_ord_id": "mom6t-a2b8d16395"
+      }
+    },
+    {
+      "method": "add_order",
+      "params": {
+        "order_type": "take-profit-limit",
+        "side": "sell",
+        "order_qty": 0.00018,
+        "symbol": "BTC/USD",
+        "triggers": {
+          "reference": "last",
+          "price": 25300.0,
+          "price_type": "static"
+        },
+        "time_in_force": "gtc",
+        "validate": true,
+        "cl_ord_id": "mom6t-2af80b6628",
+        "limit_price": 25290.0
+      }
+    }
+  ],
+  "meta": {
+    "entry_notional": 7.499999999999999,
+    "guards": {
+      "ENTRY_MAX_NOTIONAL": 10.0,
+      "ONE_POSITION_ONLY": 1
+    },
+    "qty": 0.0003,
+    "symbol": "BTC/USD",
+    "side": "buy",
+    "limit_price": 25000.0
+  }
+}

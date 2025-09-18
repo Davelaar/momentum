@@ -1,0 +1,21 @@
+[project]
+name = "momentum"
+version = "0.1.2"
+description = "Momentum trading bot (Kraken Spot, WS v2) — probe_env path fix"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.7",
+    "python-dotenv>=1.0",
+    "aiohttp>=3.9",
+    "websockets>=12.0",
+    "orjson>=3.10",
+    "uvloop>=0.19; sys_platform != 'win32'",
+    "rich>=13.7",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = [""]
+include = ["momentum*"]

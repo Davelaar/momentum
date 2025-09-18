@@ -1,3 +1,4 @@
+MANIFEST.in
 pyproject.toml
 momentum/__init__.py
 momentum.egg-info/PKG-INFO
@@ -5,6 +6,10 @@ momentum.egg-info/SOURCES.txt
 momentum.egg-info/dependency_links.txt
 momentum.egg-info/requires.txt
 momentum.egg-info/top_level.txt
+momentum/domain/types.py
+momentum/exchange/__init__.py
+momentum/exchange/kraken/__init__.py
+momentum/exchange/kraken/ws_v2_payloads.py
 momentum/l1_exchange/__init__.py
 momentum/l1_exchange/kraken_rest.py
 momentum/l1_exchange/kraken_ws.py
@@ -15,3 +20,15 @@ momentum/l3_strategies/__init__.py
 momentum/l3_strategies/meanrev_stub.py
 momentum/l4_cli/__init__.py
 momentum/l4_cli/probe_env.py
+momentum/models/__init__.py
+momentum/models/intent.py
+momentum/orders/executor.py
+momentum/ranker/selector.py
+momentum/scripts/ws_payload_probe.py
+momentum/services/trader.py
+momentum/state/store.py
+momentum/utils/__init__.py
+momentum/utils/env.py
+momentum/utils/safety.py
+momentum/var/universe.json
+tests/test_ws_payloads.py

@@ -6,18 +6,20 @@ attrs==25.3.0
 build==1.3.0
 frozenlist==1.7.0
 idna==3.10
+iniconfig==2.1.0
 markdown-it-py==4.0.0
 mdurl==0.1.2
-# Editable install with no version control (momentum==0.1.2)
--e /var/www/vhosts/snapdiscounts.nl/momentum
+-e git+ssh://git@github.com/Davelaar/momentum.git@5c8d52d9aaee183e9045ce0b2ef2309f95409d4e#egg=momentum
 multidict==6.6.4
 orjson==3.11.3
 packaging==25.0
+pluggy==1.6.0
 propcache==0.3.2
 pydantic==2.11.9
 pydantic_core==2.33.2
 Pygments==2.19.2
 pyproject_hooks==1.2.0
+pytest==8.4.2
 python-dotenv==1.1.1
 rich==14.1.0
 setuptools==80.9.0
