@@ -1,131 +1,85 @@
 
-from __future__ import annotations
-import json, os, time
+import os
+import json
+import time
 from dataclasses import dataclass, asdict
-from typing import List, Dict, Any, Optional
-
-APP = os.environ.get("APP", "/var/www/vhosts/snapdiscounts.nl/momentum")
-VAR = os.path.join(APP, "var")
-LOG = os.path.join(VAR, "janitor.log")
-ACTIONS_JSON = os.path.join(VAR, "janitor_actions.json")
-
-MAX_AGE_SEC = int(float(os.environ.get("JANITOR_MAX_AGE_SEC", 3 * 60 * 60)))
-INTERVAL_SEC = int(float(os.environ.get("JANITOR_INTERVAL_SEC", 60)))
-MIN_HOLDINGS_USD = float(os.environ.get("JANITOR_MIN_HOLDINGS_USD", 2.0))
-MIN_HOLDINGS_QTY = float(os.environ.get("JANITOR_MIN_HOLDINGS_QTY", 0.00001))
-
-POSITIONS_PATH = os.path.join(VAR, "positions.json")
-ORDERS_PATH = os.path.join(VAR, "orders.json")
-PRICES_PATH = os.path.join(VAR, "prices.json")
-
-def _log(msg: str) -> None:
-    os.makedirs(os.path.dirname(LOG), exist_ok=True)
-    ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    with open(LOG, "a") as f:
-        f.write(f"[{ts}] {msg}\n")
-
-def _read_json(path: str, default):
-    try:
-        with open(path, "r") as f:
-            return json.load(f)
-    except FileNotFoundError:
-        return default
-    except Exception as e:
-        _log(f"error reading {path}: {e}")
-        return default
+from typing import List, Optional, Dict, Any
 
 @dataclass
 class Action:
-    kind: str
-    symbol: str
+    kind: str                 # 'close_position' | 'cancel_order'
+    symbol: str               # e.g. 'BTC/USD'
     qty: float
     reason: str
     order_id: Optional[str] = None
 
 class Janitor:
-    def __init__(self):
-        self.now = time.time()
-        self.actions: List[Action] = []
-        os.makedirs(VAR, exist_ok=True)
+    """Stateless planner reading var/positions.json & var/open_orders.json and producing actions.
 
-    def _usd_value(self, symbol: str, qty: float, pos: Dict[str, Any]) -> Optional[float]:
-        if isinstance(pos, dict) and "usd_value" in pos:
-            return float(pos["usd_value"])
-        prices = _read_json(PRICES_PATH, {})
-        px = prices.get(symbol)
-        if px is None:
-            return None
-        return float(px) * float(qty)
+    Env:
+      - APP (default '.'): base path containing var/
+      - JANITOR_MAX_AGE_SEC (default 10800)
+      - DANGLING_SELL_USD_THRESHOLD (default 0.01)
+    """
+    def __init__(self, app_path: Optional[str] = None):
+        self.app_path = app_path or os.environ.get("APP", ".")
+        self.max_age_sec = int(os.environ.get("JANITOR_MAX_AGE_SEC", "10800"))
+        self.dangling_sell_usd_threshold = float(os.environ.get("DANGLING_SELL_USD_THRESHOLD", "0.01"))
 
-    def scan_positions(self) -> None:
-        positions = _read_json(POSITIONS_PATH, {})
+    # ---- IO helpers -------------------------------------------------------
+    def _var(self, rel: str) -> str:
+        return os.path.join(self.app_path, "var", rel)
+
+    def _read_json(self, rel: str, default):
+        try:
+            with open(self._var(rel), "r") as f:
+                return json.load(f)
+        except FileNotFoundError:
+            return default
+
+    # ---- Planning ---------------------------------------------------------
+    def plan(self, now_ts: Optional[int] = None) -> Dict[str, Any]:
+        now_ts = int(now_ts or time.time())
+        positions = self._read_json("positions.json", {})
+        open_orders = self._read_json("open_orders.json", [])
+
+        actions: List[Action] = []
+
+        # Rule 1: Close aged positions
         for symbol, pos in positions.items():
             qty = float(pos.get("qty", 0.0))
-            opened_at = float(pos.get("opened_at", 0.0))
-            age = self.now - opened_at if opened_at else 0.0
-            if qty <= 0:
+            opened_at = pos.get("opened_at")
+            if qty <= 0 or opened_at is None:
                 continue
-            if opened_at and age >= MAX_AGE_SEC:
-                self.actions.append(Action(
+            age = now_ts - int(opened_at)
+            if age >= self.max_age_sec:
+                actions.append(Action(
                     kind="close_position",
                     symbol=symbol,
                     qty=qty,
-                    reason=f"age {int(age)}s >= MAX_AGE_SEC {MAX_AGE_SEC}s"
+                    reason=f"age {age}s >= MAX_AGE_SEC {self.max_age_sec}s"
                 ))
 
-    def scan_orders(self) -> None:
-        orders = _read_json(ORDERS_PATH, [])
-        positions = _read_json(POSITIONS_PATH, {})
-        for o in orders:
-            try:
-                if o.get("status") != "open":
-                    continue
-                if o.get("side") != "sell":
-                    continue
-                symbol = o.get("symbol")
-                o_qty = float(o.get("order_qty", 0.0))
-                pos = positions.get(symbol, {})
-                pos_qty = float(pos.get("qty", 0.0))
-                usd_val = self._usd_value(symbol, pos_qty, pos)
-                too_small = (pos_qty <= MIN_HOLDINGS_QTY) or (usd_val is not None and usd_val <= MIN_HOLDINGS_USD)
-                if too_small:
-                    self.actions.append(Action(
-                        kind="cancel_order",
-                        symbol=symbol,
-                        qty=o_qty,
-                        order_id=str(o.get("order_id") or o.get("client_order_id") or ""),
-                        reason=f"dangling SELL with holdings qty={pos_qty} (usd={usd_val}) below threshold"
-                    ))
-            except Exception as e:
-                _log(f"error scanning order {o}: {e}")
+        # Rule 2: Cancel dangling SELLs (no holdings or below threshold)
+        for o in open_orders:
+            if o.get("side") != "sell":
+                continue
+            symbol = o.get("symbol")
+            order_id = o.get("order_id")
+            qty = float(o.get("qty", 0.0))
+            holdings = positions.get(symbol, {})
+            held_qty = float(holdings.get("qty", 0.0))
+            held_usd = float(holdings.get("usd", 0.0))
+            if held_qty <= 0.0 or held_usd <= self.dangling_sell_usd_threshold:
+                actions.append(Action(
+                    kind="cancel_order",
+                    symbol=symbol,
+                    qty=qty,
+                    reason=f"dangling SELL with holdings qty={held_qty} (usd={held_usd}) below threshold",
+                    order_id=order_id
+                ))
 
-    def run_once(self, dry_run: bool = True) -> List[Action]:
-        self.now = time.time()
-        self.actions.clear()
-        self.scan_positions()
-        self.scan_orders()
-        data = [asdict(a) for a in self.actions]
-        with open(ACTIONS_JSON, "w") as f:
-            json.dump({"ts": int(self.now), "actions": data, "dry_run": dry_run}, f, indent=2)
-        if not data:
-            _log("scan: no actions")
-            return []
-        for a in self.actions:
-            if dry_run:
-                _log(f"DRY-RUN → {a.kind} {a.symbol} qty={a.qty} reason={a.reason}")
-            else:
-                _log(f"LIVE (noop in janitor): {a.kind} {a.symbol} qty={a.qty} reason={a.reason}")
-        return self.actions
-
-def main(dry_run: bool = True, loop: bool = False) -> None:
-    j = Janitor()
-    if not loop:
-        j.run_once(dry_run=dry_run)
-        return
-    _log(f"janitor loop start (dry_run={dry_run}, interval={INTERVAL_SEC}s)")
-    while True:
-        try:
-            j.run_once(dry_run=dry_run)
-        except Exception as e:
-            _log(f"fatal in run_once: {e}")
-        time.sleep(INTERVAL_SEC)
+        return {
+            "ts": now_ts,
+            "actions": [asdict(a) for a in actions]
+        }

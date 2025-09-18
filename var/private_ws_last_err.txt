@@ -1,0 +1,1 @@
+1758194571 v2 RuntimeError: Missing KRAKEN_KEY/SECRET and no KRAKEN_WS_TOKEN provided

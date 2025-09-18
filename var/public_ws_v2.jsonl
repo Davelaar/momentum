@@ -1,0 +1,236 @@
+{"ts": 1758194217, "data": {"channel": "status", "type": "update", "data": [{"version": "2.0.10", "system": "online", "api_version": "v2", "connection_id": 12883719636826991295}]}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "1INCH/USD"}, "success": true, "time_in": "2025-09-18T11:16:54.826905Z", "time_out": "2025-09-18T11:16:54.826990Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "A/USD"}, "success": true, "time_in": "2025-09-18T11:16:54.826905Z", "time_out": "2025-09-18T11:16:54.826990Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "AAVE/USD"}, "success": true, "time_in": "2025-09-18T11:16:54.826905Z", "time_out": "2025-09-18T11:16:54.826990Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "AB/USD"}, "success": true, "time_in": "2025-09-18T11:16:54.826905Z", "time_out": "2025-09-18T11:16:54.826990Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "ACA/USD"}, "success": true, "time_in": "2025-09-18T11:16:54.826905Z", "time_out": "2025-09-18T11:16:54.826990Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "ACH/USD"}, "success": true, "time_in": "2025-09-18T11:16:54.826905Z", "time_out": "2025-09-18T11:16:54.826990Z"}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "ACA/USD", "bid": 0.02962, "bid_qty": 14100.0, "ask": 0.03014, "ask_qty": 360.87259455, "last": 0.02947, "volume": 25196.33169998, "vwap": 0.02897, "low": 0.02891, "high": 0.02998, "change": 0.00053, "change_pct": 1.83}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "ACH/USD", "bid": 0.02036, "bid_qty": 245966.81819047, "ask": 0.02038, "ask_qty": 171947.9243429, "last": 0.02038, "volume": 3251792.2394189, "vwap": 0.01996, "low": 0.0194, "high": 0.02046, "change": 0.00086, "change_pct": 4.41}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "AAVE/USD", "bid": 307.24, "bid_qty": 0.06926781, "ask": 307.25, "ask_qty": 30.72, "last": 307.03, "volume": 7458.32719792, "vwap": 298.41, "low": 291.15, "high": 309.32, "change": 10.51, "change_pct": 3.54}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "AB/USD", "bid": 0.008457, "bid_qty": 101802.35162, "ask": 0.008475, "ask_qty": 126485.23402, "last": 0.008446, "volume": 169772.17197, "vwap": 0.008455, "low": 0.008438, "high": 0.008475, "change": -1.4e-05, "change_pct": -0.17}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "1INCH/USD", "bid": 0.2668, "bid_qty": 5815.29965228, "ask": 0.2669, "ask_qty": 3969.38098619, "last": 0.2661, "volume": 123429.80398558, "vwap": 0.2637, "low": 0.2528, "high": 0.2719, "change": 0.0104, "change_pct": 4.07}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "A/USD", "bid": 0.4835, "bid_qty": 1679.16415, "ask": 0.4837, "ask_qty": 1130.70227, "last": 0.4824, "volume": 80161.37076, "vwap": 0.4802, "low": 0.4657, "high": 0.4851, "change": 0.0127, "change_pct": 2.7}]}}
+{"ts": 1758194217, "data": {"channel": "heartbeat"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "ACT/USD"}, "success": true, "time_in": "2025-09-18T11:16:56.028180Z", "time_out": "2025-09-18T11:16:56.028269Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "ACX/USD"}, "success": true, "time_in": "2025-09-18T11:16:56.028180Z", "time_out": "2025-09-18T11:16:56.028269Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "ADA/USD"}, "success": true, "time_in": "2025-09-18T11:16:56.028180Z", "time_out": "2025-09-18T11:16:56.028269Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "ADX/USD"}, "success": true, "time_in": "2025-09-18T11:16:56.028180Z", "time_out": "2025-09-18T11:16:56.028269Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "AERO/USD"}, "success": true, "time_in": "2025-09-18T11:16:56.028180Z", "time_out": "2025-09-18T11:16:56.028269Z"}}
+{"ts": 1758194217, "data": {"method": "subscribe", "result": {"channel": "ticker", "event_trigger": "trades", "snapshot": true, "symbol": "AEVO/USD"}, "success": true, "time_in": "2025-09-18T11:16:56.028180Z", "time_out": "2025-09-18T11:16:56.028269Z"}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "ACX/USD", "bid": 0.1379, "bid_qty": 25070.41406, "ask": 0.1381, "ask_qty": 800.0, "last": 0.1373, "volume": 72735.48343, "vwap": 0.1376, "low": 0.1306, "high": 0.1402, "change": 0.0039, "change_pct": 2.92}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "ADX/USD", "bid": 0.12554, "bid_qty": 28474.23033062, "ask": 0.12682, "ask_qty": 22.0, "last": 0.12591, "volume": 19930.57091029, "vwap": 0.12405, "low": 0.11962, "high": 0.1281, "change": 0.00413, "change_pct": 3.39}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "ACT/USD", "bid": 0.04116, "bid_qty": 38863.02251, "ask": 0.04124, "ask_qty": 104861.88114, "last": 0.04122, "volume": 266844.63933, "vwap": 0.04124, "low": 0.03994, "high": 0.04253, "change": 0.00102, "change_pct": 2.54}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "AERO/USD", "bid": 1.3303, "bid_qty": 1976.0, "ask": 1.3311, "ask_qty": 30.55784, "last": 1.3303, "volume": 1236270.33585, "vwap": 1.3112, "low": 1.2386, "high": 1.3671, "change": 0.0418, "change_pct": 3.24}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "ADA/USD", "bid": 0.914872, "bid_qty": 29365.73117288, "ask": 0.914873, "ask_qty": 1611.23922277, "last": 0.914873, "volume": 19839335.18119574, "vwap": 0.892411, "low": 0.861987, "high": 0.92481, "change": 0.041601, "change_pct": 4.76}]}}
+{"ts": 1758194217, "data": {"channel": "ticker", "type": "snapshot", "data": [{"symbol": "AEVO/USD", "bid": 0.0989, "bid_qty": 14808.80134, "ask": 0.099, "ask_qty": 40134.79044, "last": 0.0992, "volume": 89290.90776, "vwap": 0.0963, "low": 0.0925, "high": 0.1003, "change": 0.0049, "change_pct": 5.2}]}}
+{"ts": 1758194217, "data": {"channel": "heartbeat"}}
+{"ts": 1758194217, "data": {"channel": "heartbeat"}}
+{"ts": 1758194218, "data": {"channel": "heartbeat"}}
+{"ts": 1758194219, "data": {"channel": "heartbeat"}}
+{"ts": 1758194219, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "AAVE/USD", "bid": 307.24, "bid_qty": 0.06926781, "ask": 307.25, "ask_qty": 30.71084, "last": 307.25, "volume": 7458.33635792, "vwap": 298.41, "low": 291.15, "high": 309.32, "change": 10.73, "change_pct": 3.62}]}}
+{"ts": 1758194220, "data": {"channel": "heartbeat"}}
+{"ts": 1758194221, "data": {"channel": "heartbeat"}}
+{"ts": 1758194222, "data": {"channel": "heartbeat"}}
+{"ts": 1758194223, "data": {"channel": "heartbeat"}}
+{"ts": 1758194224, "data": {"channel": "heartbeat"}}
+{"ts": 1758194225, "data": {"channel": "heartbeat"}}
+{"ts": 1758194226, "data": {"channel": "heartbeat"}}
+{"ts": 1758194227, "data": {"channel": "heartbeat"}}
+{"ts": 1758194228, "data": {"channel": "heartbeat"}}
+{"ts": 1758194229, "data": {"channel": "heartbeat"}}
+{"ts": 1758194230, "data": {"channel": "heartbeat"}}
+{"ts": 1758194231, "data": {"channel": "heartbeat"}}
+{"ts": 1758194232, "data": {"channel": "heartbeat"}}
+{"ts": 1758194233, "data": {"channel": "heartbeat"}}
+{"ts": 1758194234, "data": {"channel": "heartbeat"}}
+{"ts": 1758194235, "data": {"channel": "heartbeat"}}
+{"ts": 1758194236, "data": {"channel": "heartbeat"}}
+{"ts": 1758194237, "data": {"channel": "heartbeat"}}
+{"ts": 1758194238, "data": {"channel": "heartbeat"}}
+{"ts": 1758194239, "data": {"channel": "heartbeat"}}
+{"ts": 1758194240, "data": {"channel": "heartbeat"}}
+{"ts": 1758194241, "data": {"channel": "heartbeat"}}
+{"ts": 1758194242, "data": {"channel": "heartbeat"}}
+{"ts": 1758194243, "data": {"channel": "heartbeat"}}
+{"ts": 1758194244, "data": {"channel": "heartbeat"}}
+{"ts": 1758194245, "data": {"channel": "heartbeat"}}
+{"ts": 1758194246, "data": {"channel": "heartbeat"}}
+{"ts": 1758194247, "data": {"channel": "heartbeat"}}
+{"ts": 1758194248, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "ADA/USD", "bid": 0.914872, "bid_qty": 32261.60381774, "ask": 0.914873, "ask_qty": 1596.91492145, "last": 0.914873, "volume": 19836075.43055006, "vwap": 0.892414, "low": 0.861987, "high": 0.92481, "change": 0.041873, "change_pct": 4.8}]}}
+{"ts": 1758194248, "data": {"channel": "heartbeat"}}
+{"ts": 1758194249, "data": {"channel": "heartbeat"}}
+{"ts": 1758194250, "data": {"channel": "heartbeat"}}
+{"ts": 1758194251, "data": {"channel": "heartbeat"}}
+{"ts": 1758194252, "data": {"channel": "heartbeat"}}
+{"ts": 1758194253, "data": {"channel": "heartbeat"}}
+{"ts": 1758194254, "data": {"channel": "heartbeat"}}
+{"ts": 1758194255, "data": {"channel": "heartbeat"}}
+{"ts": 1758194256, "data": {"channel": "heartbeat"}}
+{"ts": 1758194257, "data": {"channel": "heartbeat"}}
+{"ts": 1758194258, "data": {"channel": "heartbeat"}}
+{"ts": 1758194259, "data": {"channel": "heartbeat"}}
+{"ts": 1758194260, "data": {"channel": "heartbeat"}}
+{"ts": 1758194261, "data": {"channel": "heartbeat"}}
+{"ts": 1758194262, "data": {"channel": "heartbeat"}}
+{"ts": 1758194263, "data": {"channel": "heartbeat"}}
+{"ts": 1758194264, "data": {"channel": "heartbeat"}}
+{"ts": 1758194265, "data": {"channel": "heartbeat"}}
+{"ts": 1758194266, "data": {"channel": "heartbeat"}}
+{"ts": 1758194267, "data": {"channel": "heartbeat"}}
+{"ts": 1758194268, "data": {"channel": "heartbeat"}}
+{"ts": 1758194269, "data": {"channel": "heartbeat"}}
+{"ts": 1758194270, "data": {"channel": "heartbeat"}}
+{"ts": 1758194271, "data": {"channel": "heartbeat"}}
+{"ts": 1758194272, "data": {"channel": "heartbeat"}}
+{"ts": 1758194273, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "ADA/USD", "bid": 0.914872, "bid_qty": 7546.61725118, "ask": 0.914873, "ask_qty": 1594.41260693, "last": 0.914873, "volume": 19836077.93286458, "vwap": 0.892414, "low": 0.861987, "high": 0.92481, "change": 0.041873, "change_pct": 4.8}]}}
+{"ts": 1758194273, "data": {"channel": "heartbeat"}}
+{"ts": 1758194274, "data": {"channel": "heartbeat"}}
+{"ts": 1758194275, "data": {"channel": "heartbeat"}}
+{"ts": 1758194276, "data": {"channel": "heartbeat"}}
+{"ts": 1758194277, "data": {"channel": "heartbeat"}}
+{"ts": 1758194278, "data": {"channel": "heartbeat"}}
+{"ts": 1758194279, "data": {"channel": "heartbeat"}}
+{"ts": 1758194280, "data": {"channel": "heartbeat"}}
+{"ts": 1758194281, "data": {"channel": "heartbeat"}}
+{"ts": 1758194282, "data": {"channel": "heartbeat"}}
+{"ts": 1758194283, "data": {"channel": "heartbeat"}}
+{"ts": 1758194284, "data": {"channel": "heartbeat"}}
+{"ts": 1758194285, "data": {"channel": "heartbeat"}}
+{"ts": 1758194286, "data": {"channel": "heartbeat"}}
+{"ts": 1758194287, "data": {"channel": "heartbeat"}}
+{"ts": 1758194288, "data": {"channel": "heartbeat"}}
+{"ts": 1758194289, "data": {"channel": "heartbeat"}}
+{"ts": 1758194290, "data": {"channel": "heartbeat"}}
+{"ts": 1758194291, "data": {"channel": "heartbeat"}}
+{"ts": 1758194292, "data": {"channel": "heartbeat"}}
+{"ts": 1758194293, "data": {"channel": "heartbeat"}}
+{"ts": 1758194294, "data": {"channel": "heartbeat"}}
+{"ts": 1758194295, "data": {"channel": "heartbeat"}}
+{"ts": 1758194296, "data": {"channel": "heartbeat"}}
+{"ts": 1758194297, "data": {"channel": "heartbeat"}}
+{"ts": 1758194298, "data": {"channel": "heartbeat"}}
+{"ts": 1758194299, "data": {"channel": "heartbeat"}}
+{"ts": 1758194300, "data": {"channel": "heartbeat"}}
+{"ts": 1758194301, "data": {"channel": "heartbeat"}}
+{"ts": 1758194302, "data": {"channel": "heartbeat"}}
+{"ts": 1758194303, "data": {"channel": "heartbeat"}}
+{"ts": 1758194304, "data": {"channel": "heartbeat"}}
+{"ts": 1758194305, "data": {"channel": "heartbeat"}}
+{"ts": 1758194306, "data": {"channel": "heartbeat"}}
+{"ts": 1758194307, "data": {"channel": "heartbeat"}}
+{"ts": 1758194308, "data": {"channel": "heartbeat"}}
+{"ts": 1758194309, "data": {"channel": "heartbeat"}}
+{"ts": 1758194310, "data": {"channel": "heartbeat"}}
+{"ts": 1758194311, "data": {"channel": "heartbeat"}}
+{"ts": 1758194312, "data": {"channel": "heartbeat"}}
+{"ts": 1758194313, "data": {"channel": "heartbeat"}}
+{"ts": 1758194314, "data": {"channel": "heartbeat"}}
+{"ts": 1758194315, "data": {"channel": "heartbeat"}}
+{"ts": 1758194316, "data": {"channel": "heartbeat"}}
+{"ts": 1758194317, "data": {"channel": "heartbeat"}}
+{"ts": 1758194318, "data": {"channel": "heartbeat"}}
+{"ts": 1758194319, "data": {"channel": "heartbeat"}}
+{"ts": 1758194320, "data": {"channel": "heartbeat"}}
+{"ts": 1758194321, "data": {"channel": "heartbeat"}}
+{"ts": 1758194322, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "ADA/USD", "bid": 0.914872, "bid_qty": 2592.48879543, "ask": 0.914873, "ask_qty": 975.79122451, "last": 0.914873, "volume": 19836631.554247, "vwap": 0.892415, "low": 0.861987, "high": 0.92481, "change": 0.041533, "change_pct": 4.76}]}}
+{"ts": 1758194322, "data": {"channel": "heartbeat"}}
+{"ts": 1758194323, "data": {"channel": "heartbeat"}}
+{"ts": 1758194324, "data": {"channel": "heartbeat"}}
+{"ts": 1758194325, "data": {"channel": "heartbeat"}}
+{"ts": 1758194326, "data": {"channel": "heartbeat"}}
+{"ts": 1758194327, "data": {"channel": "heartbeat"}}
+{"ts": 1758194328, "data": {"channel": "heartbeat"}}
+{"ts": 1758194328, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "ADA/USD", "bid": 0.914872, "bid_qty": 16912.4837371, "ask": 0.914873, "ask_qty": 835.93946008, "last": 0.914873, "volume": 19836771.40601143, "vwap": 0.892415, "low": 0.861987, "high": 0.92481, "change": 0.041533, "change_pct": 4.76}]}}
+{"ts": 1758194329, "data": {"channel": "heartbeat"}}
+{"ts": 1758194330, "data": {"channel": "heartbeat"}}
+{"ts": 1758194331, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "ADA/USD", "bid": 0.914872, "bid_qty": 22278.17882888, "ask": 0.915017, "ask_qty": 35.38465396, "last": 0.914873, "volume": 19837607.34547151, "vwap": 0.892416, "low": 0.861987, "high": 0.92481, "change": 0.041533, "change_pct": 4.76}]}}
+{"ts": 1758194331, "data": {"channel": "heartbeat"}}
+{"ts": 1758194332, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "ADA/USD", "bid": 0.915016, "bid_qty": 70969.82882037, "ask": 0.915017, "ask_qty": 23.2715187, "last": 0.915017, "volume": 19837619.45860677, "vwap": 0.892416, "low": 0.861987, "high": 0.92481, "change": 0.041677, "change_pct": 4.77}]}}
+{"ts": 1758194332, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "ADA/USD", "bid": 0.915016, "bid_qty": 70969.82882037, "ask": 0.915017, "ask_qty": 11.15838344, "last": 0.915017, "volume": 19837631.57174203, "vwap": 0.892416, "low": 0.861987, "high": 0.92481, "change": 0.041677, "change_pct": 4.77}]}}
+{"ts": 1758194332, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "ADA/USD", "bid": 0.915016, "bid_qty": 70552.24320703, "ask": 0.915298, "ask_qty": 22.20211808, "last": 0.915017, "volume": 19837642.73012547, "vwap": 0.892416, "low": 0.861987, "high": 0.92481, "change": 0.041677, "change_pct": 4.77}]}}
+{"ts": 1758194332, "data": {"channel": "heartbeat"}}
+{"ts": 1758194333, "data": {"channel": "heartbeat"}}
+{"ts": 1758194334, "data": {"channel": "heartbeat"}}
+{"ts": 1758194335, "data": {"channel": "heartbeat"}}
+{"ts": 1758194336, "data": {"channel": "heartbeat"}}
+{"ts": 1758194337, "data": {"channel": "heartbeat"}}
+{"ts": 1758194338, "data": {"channel": "heartbeat"}}
+{"ts": 1758194339, "data": {"channel": "heartbeat"}}
+{"ts": 1758194340, "data": {"channel": "heartbeat"}}
+{"ts": 1758194341, "data": {"channel": "heartbeat"}}
+{"ts": 1758194342, "data": {"channel": "heartbeat"}}
+{"ts": 1758194343, "data": {"channel": "heartbeat"}}
+{"ts": 1758194344, "data": {"channel": "heartbeat"}}
+{"ts": 1758194345, "data": {"channel": "heartbeat"}}
+{"ts": 1758194346, "data": {"channel": "heartbeat"}}
+{"ts": 1758194347, "data": {"channel": "heartbeat"}}
+{"ts": 1758194348, "data": {"channel": "heartbeat"}}
+{"ts": 1758194349, "data": {"channel": "heartbeat"}}
+{"ts": 1758194350, "data": {"channel": "heartbeat"}}
+{"ts": 1758194351, "data": {"channel": "heartbeat"}}
+{"ts": 1758194352, "data": {"channel": "heartbeat"}}
+{"ts": 1758194353, "data": {"channel": "heartbeat"}}
+{"ts": 1758194354, "data": {"channel": "heartbeat"}}
+{"ts": 1758194355, "data": {"channel": "heartbeat"}}
+{"ts": 1758194356, "data": {"channel": "heartbeat"}}
+{"ts": 1758194357, "data": {"channel": "heartbeat"}}
+{"ts": 1758194358, "data": {"channel": "heartbeat"}}
+{"ts": 1758194359, "data": {"channel": "heartbeat"}}
+{"ts": 1758194360, "data": {"channel": "heartbeat"}}
+{"ts": 1758194361, "data": {"channel": "heartbeat"}}
+{"ts": 1758194362, "data": {"channel": "heartbeat"}}
+{"ts": 1758194363, "data": {"channel": "heartbeat"}}
+{"ts": 1758194364, "data": {"channel": "heartbeat"}}
+{"ts": 1758194365, "data": {"channel": "heartbeat"}}
+{"ts": 1758194366, "data": {"channel": "heartbeat"}}
+{"ts": 1758194367, "data": {"channel": "heartbeat"}}
+{"ts": 1758194368, "data": {"channel": "heartbeat"}}
+{"ts": 1758194369, "data": {"channel": "heartbeat"}}
+{"ts": 1758194370, "data": {"channel": "heartbeat"}}
+{"ts": 1758194371, "data": {"channel": "heartbeat"}}
+{"ts": 1758194372, "data": {"channel": "heartbeat"}}
+{"ts": 1758194373, "data": {"channel": "heartbeat"}}
+{"ts": 1758194374, "data": {"channel": "heartbeat"}}
+{"ts": 1758194375, "data": {"channel": "heartbeat"}}
+{"ts": 1758194376, "data": {"channel": "heartbeat"}}
+{"ts": 1758194377, "data": {"channel": "heartbeat"}}
+{"ts": 1758194378, "data": {"channel": "heartbeat"}}
+{"ts": 1758194379, "data": {"channel": "heartbeat"}}
+{"ts": 1758194380, "data": {"channel": "heartbeat"}}
+{"ts": 1758194381, "data": {"channel": "heartbeat"}}
+{"ts": 1758194382, "data": {"channel": "heartbeat"}}
+{"ts": 1758194383, "data": {"channel": "heartbeat"}}
+{"ts": 1758194384, "data": {"channel": "heartbeat"}}
+{"ts": 1758194385, "data": {"channel": "heartbeat"}}
+{"ts": 1758194386, "data": {"channel": "heartbeat"}}
+{"ts": 1758194387, "data": {"channel": "heartbeat"}}
+{"ts": 1758194388, "data": {"channel": "heartbeat"}}
+{"ts": 1758194389, "data": {"channel": "heartbeat"}}
+{"ts": 1758194390, "data": {"channel": "heartbeat"}}
+{"ts": 1758194391, "data": {"channel": "heartbeat"}}
+{"ts": 1758194392, "data": {"channel": "heartbeat"}}
+{"ts": 1758194393, "data": {"channel": "heartbeat"}}
+{"ts": 1758194394, "data": {"channel": "heartbeat"}}
+{"ts": 1758194395, "data": {"channel": "heartbeat"}}
+{"ts": 1758194396, "data": {"channel": "heartbeat"}}
+{"ts": 1758194396, "data": {"channel": "ticker", "type": "update", "data": [{"symbol": "ADA/USD", "bid": 0.915297, "bid_qty": 2920.27767693, "ask": 0.915298, "ask_qty": 22.20211808, "last": 0.915297, "volume": 19837657.39515156, "vwap": 0.892416, "low": 0.861987, "high": 0.92481, "change": 0.041957, "change_pct": 4.8}]}}
+{"ts": 1758194397, "data": {"channel": "heartbeat"}}
+{"ts": 1758194398, "data": {"channel": "heartbeat"}}
+{"ts": 1758194399, "data": {"channel": "heartbeat"}}
+{"ts": 1758194400, "data": {"channel": "heartbeat"}}
+{"ts": 1758194401, "data": {"channel": "heartbeat"}}
+{"ts": 1758194402, "data": {"channel": "heartbeat"}}
+{"ts": 1758194403, "data": {"channel": "heartbeat"}}
+{"ts": 1758194404, "data": {"channel": "heartbeat"}}
+{"ts": 1758194405, "data": {"channel": "heartbeat"}}
+{"ts": 1758194406, "data": {"channel": "heartbeat"}}
+{"ts": 1758194407, "data": {"channel": "heartbeat"}}
+{"ts": 1758194408, "data": {"channel": "heartbeat"}}
+{"ts": 1758194409, "data": {"channel": "heartbeat"}}
+{"ts": 1758194410, "data": {"channel": "heartbeat"}}
+{"ts": 1758194411, "data": {"channel": "heartbeat"}}
+{"ts": 1758194412, "data": {"channel": "heartbeat"}}
+{"ts": 1758194413, "data": {"channel": "heartbeat"}}
+{"ts": 1758194414, "data": {"channel": "heartbeat"}}
+{"ts": 1758194415, "data": {"channel": "heartbeat"}}

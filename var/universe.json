@@ -1,0 +1,3070 @@
+{
+  "generated_at": 1758193819779,
+  "source": "Kraken REST AssetPairs",
+  "filters": {
+    "suffix": "/USD"
+  },
+  "count": 510,
+  "universe": [
+    {
+      "pair": "1INCH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "A/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AAVE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AB/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ACA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ACH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ACT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ACX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ADA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ADX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AERO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AEVO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AGLD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AI16Z/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AI3/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AIOZ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AIR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AIXBT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AKE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AKT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ALCH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ALCX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ALGO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ALICE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ALKIMI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ALPHA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ALT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ANKR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ANLOG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ANON/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "APE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "APENFT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "API3/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "APT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "APU/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ARB/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ARC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ARKM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ARPA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ART/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ASRR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ASTR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ATH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ATLAS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ATOM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AUCTION/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AUD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AUDIO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AURA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AVAAI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AVAX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AVNT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "AXS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "B3/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BABY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BADGER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BAL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BANANAS31/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BAND/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BAT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BCH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BDXN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BEAM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BERA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BICO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BIGTIME/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BILLY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BIO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BIT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BLUR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BLZ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BMT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BNB/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BNC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BNT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BOBA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BODEN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BOND/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BONK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BRICK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BSX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BTR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "BTT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "C98/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CAKE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CAMP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CARV/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CAT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CCD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CELO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CELR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CFG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CHEEMS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CHEX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CHILLHOUSE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CHR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CHZ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CLANKER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CLOUD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CLV/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CMETH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "COMP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "COOKIE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "COQ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CORN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "COTI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "COW/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CPOOL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CQT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CRO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CRV/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CSM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CTC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CTSI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CVC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CVX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CXT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "CYBER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DAI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DASH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DBR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DEEP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DEGEN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DENT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DMC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DOG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DOGS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DOLO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DOT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DRIFT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DRV/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DUCK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DYDX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "DYM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EDGE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EGLD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EIGEN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ELX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ENA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ENJ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ENS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EPT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ES/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ESX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ETC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ETH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ETHFI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ETHW/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EUL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EUR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EUROP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EURQ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EURR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "EWT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FARM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FARTCOIN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FET/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FHE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FIDA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FIL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FIS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FLOKI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FLOW/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FLR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FLUX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FLY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FORTH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FWOG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "FXS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "G/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GAIA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GAL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GALA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GARI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GBP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GFI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GHIBLI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GHST/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GIGA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GLMR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GMT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GMX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GNO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GOAT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GOMINING/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GRASS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GRIFFAIN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GRT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GST/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GTC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "GUN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "H/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "HBAR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "HDX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "HFT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "HIPPO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "HMSTR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "HNT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "HONEY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "HOUSE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "HPOS10I/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ICNT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ICP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ICX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "IDEX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "IMX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "INIT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "INJ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "INTR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "IP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "JAILSTOOL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "JASMY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "JITOSOL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "JOE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "JST/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "JTO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "JUNO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "JUP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KAITO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KAR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KAS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KAVA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KEEP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KERNEL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KET/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KEY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KIN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KINT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KMNO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KNC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KOBAN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KP3R/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KSM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "KTA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "L3/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LAYER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LCX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LDO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LINEA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LINK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LIT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LMWR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LOBO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LOCKIN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LOFI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LPT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LQTY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LRC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LSETH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LSK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LSSOL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LTC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LUNA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "LUNA2/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "M/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MANA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MASK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MAT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ME/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MELANIA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MEME/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MERL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "METH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "METIS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MEW/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MICHI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MIM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MINA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MIR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MIRROR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MLN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MNGO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MNT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MOCA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MOG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MOODENG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MOON/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MORPHO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MOVE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MOVR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MSOL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MUBARAK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MULTI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MV/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "MXC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NANO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NEAR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NEIRO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NIL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NMR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NOBODY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NODE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NODL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NOS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NOT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NPC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NTRN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "NYM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OCEAN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ODOS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OGN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OMG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OMNI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ONDO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OPEN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ORCA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ORDER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OSMO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OXT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "OXY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PARTI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PAXG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PDA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PEAQ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PENDLE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PENGU/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PEPE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PERP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PHA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PLAY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PLUME/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PNUT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "POL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "POLIS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "POLS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "POND/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PONKE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "POPCAT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PORTAL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "POWR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PRCL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PRIME/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PRO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PROMPT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PROVE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PSTAKE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PTB/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PUFFER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PUMP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PUPS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PYTH/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "PYUSD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "Q/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "QI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "QNT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "QTUM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RAD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RAIIN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RARE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RARI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RAY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RBC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RED/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "REKT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "REN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RENDER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "REP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "REPV2/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "REQ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RETARDIO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "REZ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RIZE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RLC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RLUSD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ROOK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RPL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RSR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RUJI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "RUNE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "S/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SAFE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SAGA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SAHARA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SAMO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SAND/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SAPIEN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SAROS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SBR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SCRT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SDN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SEI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SGB/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SHIB/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SIGMA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SKY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SLAY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SNEK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SNX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SOGNI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SOL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SONIC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SOSO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SPELL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SPICE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SPK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SPX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SRM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SSV/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "STBL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "STEP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "STG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "STORJ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "STRD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "STRK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "STX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SUI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SUN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SUNDOG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SUPER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SUSHI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SWARMS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SWEAT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SWELL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SXT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SYN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "SYRUP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "T/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TAC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TANSSI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TAO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TBTC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TEER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TERM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TIA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TITCOIN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TLM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TNSR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TOKE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TOKEN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TON/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TOSHI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TRAC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TREE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TREMP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TRU/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TRUMP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TRX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TURBO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TUSD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "TVK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "U/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "UFD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "UMA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "UNFI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "UNI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "UNITE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USD1/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USDC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USDD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USDG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USDQ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USDR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USDS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USDT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USDUC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USELESS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "UST/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "USUAL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "UXLINK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "VANRY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "VELODROME/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "VINE/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "VIRTUAL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "VSN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "VVV/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "W/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WAL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WAXL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WBTC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WCT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WELL/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WEN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WIF/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WIN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WLD/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WLFI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WMTX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "WOO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XAUT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XBT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XCN/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XDC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XDG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XION/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XL1/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XLM/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XMR/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XNY/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XRP/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XRT/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XTER/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XTZ/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "XYO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "YFI/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "YGG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZEC/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZEREBRO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZETA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZEUS/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZEX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZIG/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZK/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZORA/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZRO/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    },
+    {
+      "pair": "ZRX/USD",
+      "tickrate_hz": null,
+      "depth_quote_band": null,
+      "spread_pct": null
+    }
+  ]
+}

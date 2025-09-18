@@ -1,11 +1,11 @@
 {
-  "ts": 1758192616,
+  "ts": 1758195256,
   "actions": [
     {
       "kind": "close_position",
       "symbol": "BTC/USD",
       "qty": 0.0005,
-      "reason": "age 46197s >= MAX_AGE_SEC 10800s",
+      "reason": "age 758195256s >= MAX_AGE_SEC 10800s",
       "order_id": null
     },
     {

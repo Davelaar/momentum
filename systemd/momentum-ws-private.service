@@ -1,0 +1,22 @@
+
+[Unit]
+Description=Momentum Private WS (openOrders & ownTrades)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=snapdiscounts
+Group=psacln
+WorkingDirectory=/var/www/vhosts/snapdiscounts.nl/momentum
+Environment=APP=/var/www/vhosts/snapdiscounts.nl/momentum
+Environment=PYTHONPATH=/var/www/vhosts/snapdiscounts.nl/momentum
+ExecStart=/bin/bash -lc '. .venv/bin/activate && python -m momentum.scripts.ws_private_runner --app $APP'
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/www/vhosts/snapdiscounts.nl/momentum/var/ws_private.out.log
+StandardError=append:/var/www/vhosts/snapdiscounts.nl/momentum/var/ws_private.err.log
+TimeoutStartSec=30
+
+[Install]
+WantedBy=multi-user.target
