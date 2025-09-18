@@ -1,0 +1,27 @@
+[2025-09-18 12:41:55] scan: no actions
+[2025-09-18 12:42:16] janitor loop start (dry_run=True, interval=60s)
+[2025-09-18 12:42:16] scan: no actions
+[2025-09-18 12:43:16] scan: no actions
+[2025-09-18 12:44:15] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:44:15] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:44:15] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 12:44:16] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:44:16] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:44:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 12:45:16] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:45:16] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:45:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 12:46:16] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:46:16] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:46:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 12:47:16] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:47:16] error reading /var/www/vhosts/snapdiscounts.nl/momentum/var/positions.json: Extra data: line 1 column 73 (char 72)
+[2025-09-18 12:47:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 12:48:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 46077s >= MAX_AGE_SEC 10800s
+[2025-09-18 12:48:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 12:49:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 46137s >= MAX_AGE_SEC 10800s
+[2025-09-18 12:49:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 12:49:46] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 46167s >= MAX_AGE_SEC 10800s
+[2025-09-18 12:49:46] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold
+[2025-09-18 12:50:16] DRY-RUN → close_position BTC/USD qty=0.0005 reason=age 46197s >= MAX_AGE_SEC 10800s
+[2025-09-18 12:50:16] DRY-RUN → cancel_order ETH/USD qty=0.01 reason=dangling SELL with holdings qty=0.0 (usd=0.0) below threshold

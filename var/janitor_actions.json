@@ -1,0 +1,20 @@
+{
+  "ts": 1758192616,
+  "actions": [
+    {
+      "kind": "close_position",
+      "symbol": "BTC/USD",
+      "qty": 0.0005,
+      "reason": "age 46197s >= MAX_AGE_SEC 10800s",
+      "order_id": null
+    },
+    {
+      "kind": "cancel_order",
+      "symbol": "ETH/USD",
+      "qty": 0.01,
+      "reason": "dangling SELL with holdings qty=0.0 (usd=0.0) below threshold",
+      "order_id": "test-sell-1"
+    }
+  ],
+  "dry_run": true
+}
