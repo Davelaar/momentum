@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Momentum observability metrics emitter
+After=network.target
+
+[Service]
+Type=oneshot
+User=snapdiscounts
+Group=psacln
+WorkingDirectory=/var/www/vhosts/snapdiscounts.nl/momentum
+Environment=APP=/var/www/vhosts/snapdiscounts.nl/momentum
+ExecStart=/var/www/vhosts/snapdiscounts.nl/momentum/.venv/bin/python -m momentum.scripts.obs_emit_metrics --out var/metrics.prom

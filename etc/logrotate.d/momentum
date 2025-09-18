@@ -1,0 +1,15 @@
+
+/var/www/vhosts/snapdiscounts.nl/momentum/var/public_ws.out
+/var/www/vhosts/snapdiscounts.nl/momentum/var/private_ws.out
+/var/www/vhosts/snapdiscounts.nl/momentum/var/metrics_http.out
+/var/www/vhosts/snapdiscounts.nl/momentum/var/obs_metrics.timer.out
+{
+    daily
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    notifempty
+    copytruncate
+    create 0664 snapdiscounts psacln
+}
