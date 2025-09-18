@@ -1,0 +1,8 @@
+# Runtime deps (pinned from your working install)
+pydantic==2.11.9
+python-dotenv==1.1.1
+aiohttp==3.12.15
+websockets==15.0.1
+orjson==3.11.3
+uvloop==0.21.0; platform_system != "Windows"
+rich==14.1.0

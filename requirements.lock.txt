@@ -1,0 +1,29 @@
+aiohappyeyeballs==2.6.1
+aiohttp==3.12.15
+aiosignal==1.4.0
+annotated-types==0.7.0
+attrs==25.3.0
+build==1.3.0
+frozenlist==1.7.0
+idna==3.10
+markdown-it-py==4.0.0
+mdurl==0.1.2
+# Editable install with no version control (momentum==0.1.2)
+-e /var/www/vhosts/snapdiscounts.nl/momentum
+multidict==6.6.4
+orjson==3.11.3
+packaging==25.0
+propcache==0.3.2
+pydantic==2.11.9
+pydantic_core==2.33.2
+Pygments==2.19.2
+pyproject_hooks==1.2.0
+python-dotenv==1.1.1
+rich==14.1.0
+setuptools==80.9.0
+typing-inspection==0.4.1
+typing_extensions==4.15.0
+uvloop==0.21.0
+websockets==15.0.1
+wheel==0.45.1
+yarl==1.20.1
