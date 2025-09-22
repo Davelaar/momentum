@@ -1,0 +1,11 @@
+[Unit]
+Description=Momentum E2E Sim (dry-run) — top-50 laagste spread
+After=network-online.target
+
+[Service]
+Type=simple
+User=snapdiscounts
+Group=psacln
+WorkingDirectory=/var/www/vhosts/snapdiscounts.nl/momentum
+ExecStart=/var/www/vhosts/snapdiscounts.nl/momentum/.venv/bin/python -m momentum.scripts.e2e_sim_dryrun --top 50 --rank spread --qty 0.010 --limit 58400 --tp 0.9:50,1.4:30,2.1:20 --sl -0.5 --breakeven 1 --validate_only 1 --output-dir var/e2e_runs/%Y-%m-%d
+Restart=no

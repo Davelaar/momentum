@@ -1,41 +1,36 @@
-# L1 INTERFACE — FROZEN
-from __future__ import annotations
-from typing import List, Dict, Any
-from pathlib import Path
-import json
+import os, json
+from typing import List, Dict, Any, Optional
 
-from momentum.domain.types import OrderPlan, TPEntry
+# Funnel/selector aligned to existing universe.json (WS v2 pipeline).
+# No scoring logic yet: default score=1.0 and reasons placeholder, preserving existing behavior.
 
-UNIVERSE_PATH = Path(__file__).resolve().parent.parent / "var" / "universe.json"
+def _load_universe(app_path: Optional[str]) -> List[str]:
+    if not app_path:
+        return []
+    path = os.path.join(app_path, "var", "universe.json")
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        # Support both shapes:
+        #  A) {"universe":[{"pair": "BTC/USD"}, ...]}
+        #  B) {"pairs": ["BTC/USD", ...]}
+        if isinstance(data, dict):
+            if "universe" in data and isinstance(data["universe"], list):
+                return [u.get("pair") for u in data["universe"] if isinstance(u, dict) and u.get("pair")]
+            if "pairs" in data and isinstance(data["pairs"], list):
+                return [p for p in data["pairs"] if isinstance(p, str)]
+        return []
+    except Exception:
+        return []
 
-def refresh_universe() -> None:
-    UNIVERSE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    universe = sorted(list({ "BTC/USD", "ETH/USD", "SOL/USD" }))
-    UNIVERSE_PATH.write_text(json.dumps({"pairs": universe}, indent=2))
-
-def evaluate(pair: str) -> Dict[str, Any]:
-    metrics = {
-        "pair": pair,
-        "spread_bps": 3.0,
-        "fee_bps": 26.0,
-        "slippage_bps": 5.0,
-        "score": 1.0,
-        "reasons": ["placeholder score = 1.0"],
-    }
-    return metrics
-
-def top(n: int) -> List[str]:
-    if not UNIVERSE_PATH.exists():
-        refresh_universe()
-    data = json.loads(UNIVERSE_PATH.read_text())
-    pairs = data.get("pairs", [])
-    return pairs[:n]
-
-def build_order_plan(max_notional_usd: float) -> OrderPlan:
-    best = top(1)[0]
-    px = 100.0
-    qty = max_notional_usd / px
-    tp1 = TPEntry(price=px * 1.015, qty=qty * 0.4)
-    tp2 = TPEntry(price=px * 1.020, qty=qty * 0.6)
-    plan = OrderPlan(pair=best, side="buy", qty=qty, limit_price=px, tp_legs=[tp1, tp2], sl_price=px*0.99, tif="gtc", meta={"note":"placeholder plan"})
-    return plan
+def rank_and_select(app_path: Optional[str], top_k: int = 6) -> List[Dict[str, Any]]:
+    pairs = _load_universe(app_path)
+    # Fallback to a minimal safe subset if universe is empty.
+    if not pairs:
+        pairs = ["BTC/USD", "ETH/USD", "SOL/USD"]
+    # Keep deterministic order for reproducibility; trivial score for now.
+    pairs = sorted(list(dict.fromkeys(pairs)))[:max(1, top_k)]
+    return [
+        {"pair": p, "score": 1.0, "reasons": ["placeholder score = 1.0"]}
+        for p in pairs
+    ]

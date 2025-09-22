@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Momentum E2E Sim (dry-run) periodically
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+AccuracySec=1s
+Unit=momentum-e2e-dryrun.service
+
+[Install]
+WantedBy=timers.target

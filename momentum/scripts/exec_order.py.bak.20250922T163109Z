@@ -1,0 +1,179 @@
+from __future__ import annotations
+import os, sys, json, argparse, re, time
+from typing import List, Dict, Any, Optional
+from momentum.state.atomic_json import read_json
+
+def _clid(prefix: str = "mom6e") -> str:
+    return f"{prefix}-{int(time.time()*1000)%100000000:x}"
+
+def _parse_tp(tp_str: str, qty: float) -> List[Dict[str, float]]:
+    if not tp_str:
+        return []
+    legs = []
+    for part in str(tp_str).split(","):
+        part = part.strip()
+        if not part:
+            continue
+        m = re.match(r'^\s*([0-9]*\.?[0-9]+)\s*@\s*([0-9]*\.?[0-9]+)\s*%\s*(?::\s*([0-9]*\.?[0-9]+)\s*)?$', part)
+        if not m:
+            raise ValueError(f"Invalid TP leg: {part!r}. Expected PRICE@ALLOC%[:LIMIT]")
+        price = float(m.group(1))
+        alloc = float(m.group(2))
+        limit = float(m.group(3)) if m.group(3) is not None else None
+        legs.append({"price": price, "alloc_pct": alloc, "limit": limit})
+    return legs
+
+def _triggers_block(trigger_price: float) -> Dict[str, Any]:
+    return {"reference": "last", "price": float(trigger_price), "price_type": "static"}
+
+def _write_to_var(obj: Dict[str, Any]) -> str:
+    app = os.environ.get("APP", ".")
+    out_dir = os.path.join(app, "var")
+    os.makedirs(out_dir, exist_ok=True)
+    outp = os.path.join(out_dir, "ws_payloads.json")
+    with open(outp, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
+    return outp
+
+def _one_position_blocked(app_path: str, symbol: str) -> bool:
+    try:
+        state = read_json(os.path.join(app_path, "var", "open_orders_state.json")) or {}
+    except Exception:
+        return False
+    open_part = state.get("open") if isinstance(state, dict) else None
+    iterable = (open_part or state) if isinstance(open_part or state, dict) else {}
+    for od in iterable.values():
+        try:
+            if (od.get("pair") == symbol) and (od.get("status", "open") == "open"):
+                return True
+        except Exception:
+            continue
+    return False
+
+def main() -> int:
+    p = argparse.ArgumentParser(description="Dry-run Orders Executor — build WS v2 add_order payloads to var/ws_payloads.json")
+    p.add_argument("--symbol", required=True, help="e.g. BTC/USD")
+    p.add_argument("--side", required=True, choices=["buy","sell"])
+    p.add_argument("--qty", required=True, type=float, help="Base quantity")
+    p.add_argument("--limit", required=True, type=float, help="Absolute limit price for entry (quote)")
+    p.add_argument("--sl", type=float, default=None, help="Stop trigger price (quote)")
+    p.add_argument("--sl_limit", type=float, default=None, help="Stop-limit price2 (quote) — if set, order_type=stop-loss-limit")
+    p.add_argument("--tp", type=str, default="", help='Comma list: "price@pct%[:limit]", e.g. "25200@40%,25300@60%:25290"')
+    p.add_argument("--validate", type=int, default=1)
+    p.add_argument("--dry_run", type=int, default=1)
+    args = p.parse_args()
+
+    app_path = os.environ.get("APP", ".")
+    tif = os.environ.get("DEFAULT_TIF", "gtc").lower()
+    post_only = bool(int(os.environ.get("DEFAULT_POST_ONLY", "1")))
+    validate = bool(int(args.validate))
+
+    max_notional_env = os.environ.get("ENTRY_MAX_NOTIONAL", "10")
+    try:
+        max_notional = float(max_notional_env)
+    except Exception:
+        max_notional = 10.0
+    notional = float(args.qty) * float(args.limit)
+    if notional > max_notional + 1e-12:
+        payload = {"error":"entry_max_notional_exceeded","notional":notional,"max":max_notional}
+        outp = _write_to_var(payload)
+        print(json.dumps(payload))
+        print(f"[dry-run] wrote guard result to {outp}")
+        return 0
+
+    one_pos_only = int(os.environ.get("ONE_POSITION_ONLY", "1"))
+    if one_pos_only == 1 and _one_position_blocked(app_path, args.symbol):
+        payload = {"error":"one_position_only_block","symbol":args.symbol}
+        outp = _write_to_var(payload)
+        print(json.dumps(payload))
+        print(f"[dry-run] wrote guard result to {outp}")
+        return 0
+
+    tp_legs = _parse_tp(args.tp, args.qty)
+
+    entry = {
+        "method": "add_order",
+        "params": {
+            "order_type": "limit",
+            "side": args.side,
+            "order_qty": float(args.qty),
+            "symbol": args.symbol,
+            "limit_price": float(args.limit),
+            "time_in_force": tif,
+            "post_only": post_only,
+            "validate": validate,
+            "cl_ord_id": _clid("mom6e"),
+        },
+    }
+
+    stop_loss = None
+    if args.sl is not None:
+        order_type = "stop-loss-limit" if args.sl_limit is not None else "stop-loss"
+        sl_params = {
+            "order_type": order_type,
+            "side": "sell" if args.side == "buy" else "buy",
+            "order_qty": float(args.qty),
+            "symbol": args.symbol,
+            "triggers": _triggers_block(float(args.sl)),
+            "time_in_force": tif,
+            "validate": validate,
+            "cl_ord_id": _clid("mom6s"),
+        }
+        if args.sl_limit is not None:
+            sl_params["limit_price"] = float(args.sl_limit)
+        stop_loss = {"method": "add_order", "params": sl_params}
+
+    take_profits: List[Dict[str, Any]] = []
+    for leg in tp_legs:
+        alloc = max(0.0, min(100.0, float(leg["alloc_pct"])))
+        vol = float(args.qty) * (alloc / 100.0)
+        if vol <= 0.0:
+            continue
+        if leg.get("limit") is not None:
+            tp_params = {
+                "order_type": "take-profit-limit",
+                "side": "sell" if args.side == "buy" else "buy",
+                "order_qty": vol,
+                "symbol": args.symbol,
+                "triggers": _triggers_block(float(leg["price"])),
+                "limit_price": float(leg["limit"]),
+                "time_in_force": tif,
+                "validate": validate,
+                "cl_ord_id": _clid("mom6t"),
+            }
+        else:
+            tp_params = {
+                "order_type": "take-profit",
+                "side": "sell" if args.side == "buy" else "buy",
+                "order_qty": vol,
+                "symbol": args.symbol,
+                "triggers": _triggers_block(float(leg["price"])),
+                "time_in_force": tif,
+                "validate": validate,
+                "cl_ord_id": _clid("mom6t"),
+            }
+        take_profits.append({"method":"add_order","params":tp_params})
+
+    result = {
+        "entry": entry,
+        "stop_loss": stop_loss,
+        "take_profits": take_profits,
+        "meta": {
+            "entry_notional": notional,
+            "guards": {
+                "ENTRY_MAX_NOTIONAL": max_notional,
+                "ONE_POSITION_ONLY": one_pos_only,
+            },
+            "qty": float(args.qty),
+            "symbol": args.symbol,
+            "side": args.side,
+            "limit_price": float(args.limit),
+        },
+    }
+
+    outp = _write_to_var(result)
+    print(f"[dry-run] wrote payloads to {outp}")
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())
