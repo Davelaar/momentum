@@ -3,3 +3,8 @@ var/
 __pycache__/
 *.pyc
 .env*
+var/
+.venv/
+__pycache__/
+*.pyc
+.env*
