@@ -8,3 +8,18 @@ var/
 __pycache__/
 *.pyc
 .env*
+# venv & artifacts
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# lokale config/secrets
+.env*
+!.env.example
+
+# editors
+.vscode/
+.idea/

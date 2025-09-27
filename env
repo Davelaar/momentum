@@ -1,0 +1,165 @@
+# ======================
+# Trading Bot v1.0d
+# Complete .env config
+# ======================
+
+# --- 3Commas / Signal ---
+SIGNAL_SECRET=eyJhbGciOiJIUzI1NiJ9.eyJzaWduYWxzX3NvdXJjZV9pZCI6MTU2NjM4fQ.osNB9c9iGn6_zZxVDzYzDLyL5vju2Ux6D4jYDgeyCpM
+BOT_UUID=2885acb7-c8e6-4f37-aa6e-44b5f05c5949
+THREEC_SIGNAL_WEBHOOK=https://api.3commas.io/signal_bots/webhooks
+THREEC_API_KEY=8108ccf28197472a91a7c796b4aa9b2575fb43c96a564286aa1fc5e8f4295855
+THREEC_API_SECRET=7b36e8ef24c9eb3f70eabf9d2c0186a036c530afcfe37c4e17738f335e7bca0f38992b05227e831d61c1c530b9496dc30164df4d79ac7ce15eb63235a20e6a45606cc8328382ffb5fc71aca80892119782553523990da45dcca495a2a5c2218e27de655e
+THREECOMMAS_API_KEY=508d8d5e3c01414eb7f54213be48fbee90ab9ab3aa474265b7c61ec496bec4c9
+THREECOMMAS_API_SECRET=715242209c2339f7512158a66804ac7f82097bc51ae02b9bd10b491651026fb170e2f9996d7da3555f776d2475db16849c460ca0db1a37d733b1f36c4def5c004d2e2cee237993b4d1c7f4f161a1f57e293fb692923d407fb64848d211b9bf071e0f8081
+THREECOMMAS_ACCOUNT_ID=33290445
+THREEC_API_BASE=https://api.3commas.io
+ACCOUNT_ID=
+DEBUG_DUMP_PAYLOAD=1
+MIN_3C_BASE_QTY=0.02
+
+# --- Exchange ---
+EXCHANGE=kraken
+KRAKEN_API_KEY=ZjW2DpRiJ/YwRXPzxZotzaMFmMwMkjrtI/8aH3ZMlyrQZSFqbjbDmZSO
+KRAKEN_API_SECRET=I3vE/L136vNCGSjiMPJNLXmGWtmeRn75aaY3E0R+aBiLdwTpSJn51KHi3sNQ/M/15YsUDjWx/VLkPVGcQh0AZw==
+QUOTE_ASSET=USD
+DRY_RUN=false
+
+# --- Bot mode ---
+MODE=auto
+MANUAL_SYMBOL=
+
+# --- Exchange / market ---
+EXCHANGE_ID=kraken
+QUOTE_ASSET=USD
+
+# --- Payload controls (3Commas Signal JSON) ---
+
+# Core instellingen
+MAX_LAG_SEC=300           # max. vertraging in seconden
+TRIGGER_PRICE=            # optioneel, absolute prijs als trigger
+TV_EXCHANGE=KRAKEN        # bv. KRAKEN
+ACTION=enter_long         # enter_long / enter_short / exit_long / exit_short
+
+# Order sectie
+CURRENCY_TYPE=quote       # quote / base / margin_percent / position_percent
+ORDER_TYPE=               # optioneel: market / limit
+ORDER_PRICE=              # optioneel: limietprijs
+ORDER_PRICE_PERCENT=      # optioneel: percentage t.o.v. ref type
+ORDER_PRICE_PERCENT_REF_TYPE=  # current_price / base_entry_price / avg_entry_price
+
+# Take Profit
+TP_PCTS=1.5,2.1           # lijst met TP percentages
+TP_SIZES=40,60            # corresponderende volumes (%)
+TP_TRAILING_ENABLED=false # true/false
+TP_TRAILING_PCT=0.2       # afstand in %
+
+# Stop Loss
+SL_PCT=1.2                # % onder entry
+SL_TIMEOUT_SEC=180        # 0 = uit
+BREAKEVEN_ENABLED=true    # true/false
+TRAILING_SL_ENABLED=false # true/false
+TRAILING_SL_PCT=0.5       # afstand in %
+
+# --- Fund allocation ---
+RESERVE_QUOTE=50
+MAX_QUOTE_CAP=0
+MIN_POSITION_TOTAL=1.00
+MIN_QUOTE_GUARD=50
+ORDER_SAFETY_PCT=0.96
+BASE_QTY_PAD_PCT=0.05
+MIN_3C_BASE_QTY=0.02
+INVEST_PCT=0.2
+ORPHAN_MIN_USD=2
+
+# --- Market filters ---
+REMOVE_STABLES=true
+MAX_SPREAD_PCT=0.3
+ABS_MIN_24H_VOL=250000
+DYN_MIN_VOL_MULT=1.1
+MIN_24H_RANGE_PCT=4.0
+RANGE_USE_ABS=true
+RANGE_REQUIRE_POSITIVE=true
+
+# --- Weights (vanilla scoring) ---
+WEIGHT_RANGE=0.35
+WEIGHT_ONEH=0.30
+WEIGHT_LOGVOL=0.20
+WEIGHT_SPREAD=0.10
+WEIGHT_AMS=0.05
+AMS_LOOKBACK_BARS=12
+
+# --- Sentiment guard ---
+REQUIRE_POSITIVE_SENTIMENT=true
+SENTIMENT_EMA_FAST=9
+SENTIMENT_EMA_SLOW=20
+SENTIMENT_TIMEFRAME=15m
+SENTIMENT_FALLBACK_TF=1h
+# opties: block / half / proceed
+NEGATIVE_SENTIMENT_MODE=half
+SENTIMENT_RULE=and
+SENTIMENT_DEBUG=1
+
+# --- Entry-confluence / scalper ---
+SCALPER_MODE=true
+SCALPER_TIMEFRAME=5m
+SCALPER_TOP_N=40
+SCALPER_MIN_GREEN=2
+SCALPER_BREAKOUT_ATR_MULT=0.2
+SCALPER_EMA_FAST=50
+SCALPER_EMA_SLOW=200
+SCALPER_CANDIDATE_CAP=12
+SCALPER_WORKERS=5
+
+ENTRY_WAIT_CANDLE_CLOSE=true
+ENTRY_CONFIRM_EMA_FAST=9
+ENTRY_CONFIRM_EMA_SLOW=21
+ENTRY_CONFIRM_RSI_MIN=35
+ENTRY_CONFIRM_RSI_MAX=70
+SKIP_PUMP_PCT=0.8
+SKIP_PUMP_LOOKBACK_SEC=180
+ORDERBOOK_IMBALANCE_MIN=1.2
+REQUIRE_BTC_ETH_TREND_ALIGN=true
+TREND_LOOKBACK_MIN=15
+MIN_UPTREND_PCT=0.0
+PAIR_COOLDOWN_MIN=15
+MAX_DIST_FROM_VWAP_PCT=2.0
+ENABLE_PULLBACK=true
+PULLBACK_EMA_MIN=20
+MAX_IMPACT_PCT=0.15
+ORDERBOOK_LEVELS=15
+
+# --- Watchdog / Guardian ---
+ENABLE_WATCHDOG=1
+WATCHDOG_FREQ_SEC=30
+WATCHDOG_MAX_MINUTES=20
+WATCHDOG_MIN_PROFIT_PCT=0.3
+WATCHDOG_DRIFT_ENABLE=true
+WATCHDOG_DRIFT_MIN_AGE_MIN=10
+WATCHDOG_DRIFT_MAX_RETURN_PCT=-0.3
+DRIFT_EXIT_MIN=6
+DRIFT_EXIT_PCT=0.20
+WD_INTERVAL_SEC=30
+WD_MAX_AGE_MIN=60
+WD_TAKE_PROFIT_BREAKEVEN=true
+WATCHDOG_MAX_AGE_MIN=60
+WATCHDOG_STATUSES=waiting_targets,waiting_position
+WATCHDOG_USE_TREND=1
+WATCHDOG_TREND_MIN=15
+WATCHDOG_TREND_TIMEFRAME=1m
+WATCHDOG_UPTREND_MIN_PCT=0.2
+WATCHDOG_TREND_STRICT=0
+WATCHDOG_DRY_RUN=0
+
+# --- Cleaner / Orphans ---
+ENABLE_CLEANER=1
+ORPHAN_DRY_RUN=0
+ORPHAN_LOG=/var/www/vhosts/snapdiscounts.nl/botv2/logs/orphan_cleaner.log
+
+# --- Logging & state ---
+LOG_DIR=/var/www/vhosts/snapdiscounts.nl/botv2/logs
+LOG_LEVEL=INFO
+LOCK_PATH=./.bot.lock
+LAST_TRADE_PATH=./last_trade.json
+GUARDIAN_LOG=/var/www/vhosts/snapdiscounts.nl/botv2/logs/guardian.log
+GUARDIAN_DEBUG=1
+DEBUG_DUMP_PAYLOAD=1

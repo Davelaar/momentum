@@ -1,0 +1,132 @@
+import os, json, sys, asyncio, argparse, time, aiohttp, base64, hmac, hashlib, urllib.parse
+
+KRAKEN_API = "https://api.kraken.com"
+WS_AUTH_URL = "wss://ws-auth.kraken.com/v2"
+
+async def rest(session, path, data, key, secret):
+    url = KRAKEN_API + path
+    nonce = str(int(time.time() * 1000))
+    data["nonce"] = nonce
+    postdata = urllib.parse.urlencode(data)
+    message = (nonce + postdata).encode()
+    sha256 = hashlib.sha256(message).digest()
+    mac = hmac.new(base64.b64decode(secret), path.encode() + sha256, hashlib.sha512)
+    sig = base64.b64encode(mac.digest()).decode()
+    headers = {
+        "API-Key": key,
+        "API-Sign": sig,
+        "Content-Type": "application/x-www-form-urlencoded"
+    }
+    async with session.post(url, data=data, headers=headers, timeout=15) as r:
+        js = await r.json()
+        return js
+
+async def get_balances(session, key, secret):
+    js = await rest(session, "/0/private/BalanceEx", {}, key, secret)
+    if js.get("error"):
+        raise RuntimeError(f"BalanceEx error: {js['error']}")
+    res = js.get("result", {})
+    out = {}
+    for k,v in res.items():
+        avail = v.get("available") or v.get("balance") or "0"
+        try:
+            out[k] = float(avail)
+        except Exception:
+            out[k] = 0.0
+    return out
+
+async def run(symbol, limit, validate, lot_decimals, ordermin):
+    key = os.getenv("KRAKEN_KEY")
+    sec = os.getenv("KRAKEN_SECRET")
+    if not key or not sec:
+        raise RuntimeError("Missing KRAKEN_KEY/SECRET")
+
+    async with aiohttp.ClientSession() as session:
+        bals = await get_balances(session, key, sec)
+        usd = bals.get("ZUSD", 0.0) + bals.get("USD", 0.0)
+        max_pct = float(os.getenv("MAX_BALANCE_PCT", "0.98"))
+        entry_max = float(os.getenv("ENTRY_MAX_NOTIONAL", "10"))
+        notional = min(usd * max_pct, entry_max)
+        if notional < ordermin:
+            return {
+                "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+                "symbol": symbol,
+                "result": {"error": "no free USD balance", "free_usd": usd}
+            }
+
+        qty = round(notional / float(limit), lot_decimals)
+        payload = {
+            "method": "add_order",
+            "params": {
+                "order_type": "limit",
+                "side": "buy",
+                "order_qty": qty,
+                "symbol": symbol,
+                "time_in_force": "gtc",
+                "limit_price": limit,
+                "validate": bool(validate),
+                "token": "<WS_TOKEN>"
+            }
+        }
+        # WS-auth token + submit
+        token = await _get_ws_token(session, key, sec)
+        payload["params"]["deadline"] = _deadline_rfc3339_ms(5.0)
+        payload["params"]["token"] = token
+
+        out = {
+            "usd_balance": usd,
+            "notional": notional,
+            "qty": qty,
+            "sent": payload,
+            "received": []
+        }
+        import asyncio, json, websockets
+        async with websockets.connect(WS_AUTH_URL, ping_interval=20, ping_timeout=20) as ws:
+            await ws.send(json.dumps(payload))
+            try:
+                reply = await asyncio.wait_for(ws.recv(), timeout=6.0)
+                try:
+                    out["received"].append(json.loads(reply))
+                except Exception:
+                    out["received"].append({"raw": reply})
+            except asyncio.TimeoutError:
+                out["received"].append({"error":"ws-reply-timeout"})
+        return {"ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"), "symbol": symbol, "result": out}
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--symbol", required=True)
+    ap.add_argument("--limit", type=float, required=True)
+    ap.add_argument("--validate", type=int, default=1)
+    ap.add_argument("--lot-decimals", type=int, default=2)
+    ap.add_argument("--ordermin", type=float, default=1.0)
+    args = ap.parse_args()
+
+    out = asyncio.run(run(args.symbol, args.limit, args.validate, args.lot_decimals, args.ordermin))
+    print(json.dumps(out, indent=2))
+
+if __name__ == "__main__":
+    main()
+
+import websockets
+from datetime import datetime, timezone, timedelta
+
+async def _get_ws_token(session, key, sec):
+    import urllib.parse
+    path = "/0/private/GetWebSocketsToken"
+    nonce = str(int(time.time()*1000))
+    data = {"nonce": nonce}
+    postdata = urllib.parse.urlencode(data)
+    sha256 = hashlib.sha256((nonce + postdata).encode()).digest()
+    sig = hmac.new(base64.b64decode(sec), path.encode()+sha256, hashlib.sha512).digest()
+    headers = {"API-Key": key, "API-Sign": base64.b64encode(sig).decode(),
+               "Content-Type":"application/x-www-form-urlencoded; charset=utf-8"}
+    async with aiohttp.ClientSession() as s:
+        async with s.post(KRAKEN_API+path, data=data, headers=headers, timeout=30) as r:
+            js = await r.json()
+            if js.get("error"): raise RuntimeError(js["error"])
+            return js["result"]["token"]
+
+def _deadline_rfc3339_ms(offset_s=5.0):
+    ts = datetime.now(timezone.utc) + timedelta(seconds=offset_s)
+    return ts.isoformat(timespec="milliseconds").replace("+00:00","Z")
